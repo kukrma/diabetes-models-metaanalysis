@@ -317,8 +317,7 @@ def meal_pa_detection(meal_path:str, pa_path:str):
     pa_ci_sen = 1.96*(np.std(pa["SENSITIVITY"])/np.sqrt(len(pa)))
     pa_ci_fpr = 1.96*(np.std(pa["FPR"])/np.sqrt(len(pa)))
 
-    # plot results:
-    # results:
+    # print results:
     print("\n=== MEALS ===============================================")
     print(f"mean sensitivity: {meals_means[0]} (± {meals_ci_sen})")
     print(f"mean FPR*:        {meals_means[1]} (± {meals_ci_fpr})")
